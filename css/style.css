@@ -110,6 +110,7 @@ nav a:hover {
 }
 
 /* body */
+
 .banner {
   background: url(../images/101-pork-dumplings.png);
   background-repeat: no-repeat;
@@ -185,13 +186,25 @@ nav a:hover {
   border: 3px dashed #841a1a;
 }
 
+.contact {
+  min-height: 300px;
+  background-color: antiquewhite;
+}
+.contact_card {
+  width: 100vw;
+
+  flex-grow: 1;
+
+  border: 3px dashed #841a1a;
+}
+
 /* footer */
 footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: rgb(231, 35, 39);
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   gap: 1rem;
 }
 
