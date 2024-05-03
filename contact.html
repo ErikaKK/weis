@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Wei's Dumplings Hut</title>
+  </head>
+  <body>
+    <!--head-->
+    <header>
+      <div class="header_logo">
+        <h1 class="title">Odin Recipes</h1>
+      </div>
+      <nav id="header-nav">
+        <div class="mobileHeader" onclick="openMenu();burgerTrans(this)">
+          <div class="humburger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+
+        <div class="header-nav_menu">
+          <ul class="header-nav_list">
+            <li><a class="header-nav_list-item" href="index.html">Home</a></li>
+            <li>
+              <a class="header-nav_list-item" href="menu.html">Menu</a>
+            </li>
+            <li>
+              <a class="header-nav_list-item selected" href="">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="language-selector">
+          <a class="language selected" href="">EN</a>
+          ｜
+          <a class="language" href="">中文</a>
+        </div>
+      </nav>
+    </header>
+    <!-- body -->
+    <main>
+      <div class="content">
+        <div class="contact">
+          <div class="contact-card">
+            <h1>We Are Open!</h1>
+          </div>
+        </div>
+        <div class="contact-card"></div>
+      </div>
+      <div class="map">Map</div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="info">
+        <div class="info-card">Address</div>
+        <div class="info-card">Opening Hour</div>
+        <div class="info-card">Contact Us</div>
+      </div>
+      <div class="info-horizontal-line"></div>
+      <div class="info-bottom">
+        <span>© </span><span>Designed By Erica Kong</span>
+      </div>
+    </footer>
+
+    <!-- script -->
+    <script>
+      function burgerTrans(x) {
+        x.classList.toggle("change");
+      }
+      // const nav = document.getElementById("header-nav");
+      // const content = document.querySelector(".content");
+      const menu = document.querySelector(".header-nav_menu");
+      // const burger = document.querySelector("mobileHeader");
+      let open;
+      // error here
+      function openMenu() {
+        if (open) {
+          menu.style.display = "none";
+          open = false;
+        } else if (!open) {
+          // nav.appendChild(menu); //don't know how to change the order of the menu div
+          menu.style.display = "block";
+          open = true;
+        }
+      }
+    </script>
+  </body>
+</html>
