@@ -158,19 +158,18 @@ nav a:hover {
   overflow-x: auto; /* Enable horizontal scrollbar */
   white-space: nowrap; /* Prevent content from wrapping */
   height: 300px;
+
+  box-shadow: 0 0px 20px gray inset;
 }
 
 .preview > * {
   display: inline-block;
-
+  top: 5px;
   margin: 5px;
 }
 
 .preview-card {
-  /* width: 300px; */
   height: 280px;
-
-  border: 3px dashed #eee;
   position: relative;
   overflow: hidden;
   /* display: flex;
@@ -182,7 +181,6 @@ nav a:hover {
 }
 
 .map {
-  /* width: 100%; */
   min-height: 300px;
   border: 3px dashed #841a1a;
 }
@@ -216,6 +214,7 @@ footer {
   flex-wrap: wrap;
 }
 .info-card {
+  text-align: center;
   width: 300px;
   height: 200px;
   border: 3px dashed #eee;
