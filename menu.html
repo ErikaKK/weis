@@ -9,25 +9,25 @@
   <body>
     <!--head-->
     <!--head-->
+    <!--head-->
     <header>
-      <div class="header_logo">
-        <h1 class="title">Odin Recipes</h1>
+      <div class="header-top">
+        <div class="logo"><h1>Odin Recipes</h1></div>
+        
+          
+        <div class="toggle-btn" onclick="burgerTrans(this);openMenu()"">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+    
+ 
       </div>
       <nav id="header-nav">
-        <div class="mobileHeader" onclick="openMenu();burgerTrans(this)">
-          <div class="humburger">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-          </div>
-        </div>
-
         <div class="header-nav_menu">
           <ul class="header-nav_list">
-            <li><a class="header-nav_list-item" href="index.html">Home</a></li>
-            <li>
-              <a class="header-nav_list-item selected" href="menu.html">Menu</a>
-            </li>
+            <li><a class="header-nav_list-item selected" href="">Home</a></li>
+            <li><a class="header-nav_list-item" href="menu.html">Menu</a></li>
             <li>
               <a class="header-nav_list-item" href="contact.html">Contact</a>
             </li>
@@ -40,6 +40,7 @@
         </div>
       </nav>
     </header>
+
     <!-- body -->
     <main>
       <div class="content">
@@ -69,21 +70,10 @@
       function burgerTrans(x) {
         x.classList.toggle("change");
       }
-      // const nav = document.getElementById("header-nav");
-      // const content = document.querySelector(".content");
-      const menu = document.querySelector(".header-nav_menu");
-      // const burger = document.querySelector("mobileHeader");
-      let open;
-      // error here
+      
       function openMenu() {
-        if (open) {
-          menu.style.display = "none";
-          open = false;
-        } else if (!open) {
-          // nav.appendChild(menu); //don't know how to change the order of the menu div
-          menu.style.display = "block";
-          open = true;
-        }
+        const navbar = document.getElementById("header-nav");
+        navbar.classList.toggle('show');
       }
     </script>
   </body>
