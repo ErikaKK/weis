@@ -7,19 +7,16 @@
     <title>Wei's Dumplings Hut</title>
   </head>
   <body>
-    <!--head-->
+    <!--header-->
     <header>
       <div class="header-top">
         <div class="logo"><h1>Odin Recipes</h1></div>
-        
-          
-        <div class="toggle-btn" onclick="burgerTrans(this);openMenu()"">
+
+        <div class="toggle-btn" onclick="burgerTrans(this);openMenu()">
           <div class="bar1"></div>
           <div class="bar2"></div>
           <div class="bar3"></div>
         </div>
-    
- 
       </div>
       <nav id="header-nav">
         <div class="header-nav_menu">
@@ -51,29 +48,72 @@
                 voluptatem autem laboriosam quisquam a veniam expedita
                 distinctio reiciendis, odit, error asperiores ducimus aspernatur
                 aut doloremque enim quia facere at ut?
-            
               </p>
             </div>
           </div>
-          <img
+          <!-- <img
             id="bannerIMG"
             src="./images/HomePagePicture.jpg"
             alt="Dumplings"
-          />
+          /> -->
         </div>
       </div>
       <div class="preview">
         <div class="preview-card preview-first">
           <h2>Our Food-></h2>
         </div>
-        <div class="preview-card"><img class="preview-img" src="./images/panfried-dumplings1.jpg" alt="Dish" /></div>
-        <div class="preview-card"><img class="preview-img" src="./images/806-BeefTripe1.jpg" alt="Dish" /></div>
-        <div class="preview-card"><img class="preview-img" src="./images/906-GaiLan.jpg" alt="Dish" /></div>
-        <div class="preview-card"><img class="preview-img" src="./images/boiled-dumplings.jpg" alt="Dish" /></div>
-        <div class="preview-card"><img class="preview-img" src="./images/dumpling-noodle-soup1.jpg" alt="Dish" /></div>
-        <div class="preview-card"><img class="preview-img" src="./images/703-BlackPepperBeefWRice.jpg" alt="Dish" /></div>
-        <div class="preview-card"><img class="preview-img" src="./images/701-HoneyChickenWRice.jpg" alt="Dish" /></div>
-        <div class="preview-card"><img class="preview-img" src="./images/807-SaltPepperChicken.jpg" alt="Dish" /></div>
+        <div class="preview-card">
+          <img
+            class="preview-img"
+            src="./images/panfried-dumplings1.jpg"
+            alt="Dish"
+          />
+        </div>
+        <div class="preview-card">
+          <img
+            class="preview-img"
+            src="./images/806-BeefTripe1.jpg"
+            alt="Dish"
+          />
+        </div>
+        <div class="preview-card">
+          <img class="preview-img" src="./images/906-GaiLan.jpg" alt="Dish" />
+        </div>
+        <div class="preview-card">
+          <img
+            class="preview-img"
+            src="./images/boiled-dumplings.jpg"
+            alt="Dish"
+          />
+        </div>
+        <div class="preview-card">
+          <img
+            class="preview-img"
+            src="./images/dumpling-noodle-soup1.jpg"
+            alt="Dish"
+          />
+        </div>
+        <div class="preview-card">
+          <img
+            class="preview-img"
+            src="./images/703-BlackPepperBeefWRice.jpg"
+            alt="Dish"
+          />
+        </div>
+        <div class="preview-card">
+          <img
+            class="preview-img"
+            src="./images/701-HoneyChickenWRice.jpg"
+            alt="Dish"
+          />
+        </div>
+        <div class="preview-card">
+          <img
+            class="preview-img"
+            src="./images/807-SaltPepperChicken.jpg"
+            alt="Dish"
+          />
+        </div>
       </div>
       <div class="map">Map</div>
     </main>
@@ -95,10 +135,10 @@
       function burgerTrans(x) {
         x.classList.toggle("change");
       }
-      
+
       function openMenu() {
         const navbar = document.getElementById("header-nav");
-        navbar.classList.toggle('show');
+        navbar.classList.toggle("show");
       }
     </script>
   </body>

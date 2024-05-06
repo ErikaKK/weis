@@ -118,26 +118,19 @@ nav a:hover {
   min-height: 400px;
 }
 #bannerRow {
-  display: flex;
-  flex-wrap: wrap;
+  padding: 1rem;
 }
-
 #bannerBG {
   min-height: 336px;
-
   opacity: 0.8;
   background-color: white;
-  flex: 1;
   /* border-radius: 10px; */
 }
 .banner-story {
-  margin: 1rem 3rem 1rem 3rem;
+  padding: 2rem;
   text-align: left;
 }
 
-#bannerIMG {
-  flex: 1;
-}
 .content {
   padding: 2rem;
   display: flex;
@@ -302,13 +295,8 @@ footer {
   }
 
   /* Body */
-  .banner {
-    background: none;
+
+  #bannerRow {
+    padding: 0;
   }
-  #bannerIMG {
-    width: 100%;
-  }
-  /* #bannerBG {
-    border: 2px solid yellow;
-  } */
 }
