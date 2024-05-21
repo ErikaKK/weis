@@ -1,0 +1,114 @@
+[
+    {
+    "id":1,
+    "image":"",
+    "name":"Pork & Prawn Dumplings",
+    "price":"$11.9 for 6 pcs / $16.9 for 12 pcs",
+    "code":101,
+    "category":"Boiled Dumplings"
+    },
+    {
+        "id":2,
+        "image":"./images/101-pork-dumplings.png",
+        "name":"Pork & Chives Dumplings",
+        "price":"$9.9 for 6 pcs / $14.9 for 12 pcs",
+        "code":102,
+        "category":"Boiled Dumplings"
+    },
+    {
+        "id":3,
+        "image":"",
+        "name":"Pork & Chinese Cabbage Dumplings",
+        "price":"$9.9 for 6 pcs / $14.9 for 12 pcs",
+        "code":103,
+        "category":"Boiled Dumplings"
+    },
+    {
+        "id":4,
+        "image":"",
+        "name":"Beef & Celery Dumplings",
+        "price":"$9.9 for 6 pcs / $14.9 for 12 pcs",
+        "code":104,
+        "category":"Boiled Dumplings"
+    },
+    {
+        "id":5,
+        "image":"",
+        "name":"Vegetarian Dumplings",
+        "price":"$9.9 for 6 pcs / $14.9 for 12 pcs",
+        "code":105,
+        "category":"Boiled Dumplings"
+    },
+    {
+        "id":6,
+        "image":"",
+        "name":"Prawn, Eggs & Chives Dumplings",
+        "price":"$11.9 for 6 pcs / $16.9 for 12 pcs",
+        "code":106,
+        "category":"Boiled Dumplings"
+    },
+    {
+        "id":7,
+        "image":"",
+        "name":"Chicken & Coriander Dumplings",
+        "price":"$11.9 for 6 pcs / $16.9 for 12 pcs",
+        "code":107,
+        "category":"Boiled Dumplings"
+    },
+    {
+        "id":8,
+        "image":"",
+        "name":"Lamb & Onion Dumplings",
+        "price":"$15.9 for 6 pcs / $19.9 for 12 pcs",
+        "code":108,
+        "category":"Boiled Dumplings"
+    },
+    {
+        "id":9,
+        "image":"",
+        "name":"Spicy Wanton (14pcs)",
+        "price":"$14.9",
+        "code":109,
+        "category":"Boiled Dumplings"
+    },
+    {
+        "id":10,
+        "image":"",
+        "name":"Dumpling soup",
+        "price":"$1",
+        "code":"",
+        "category":"Add on"
+    },
+    {
+        "id":11,
+        "image":"",
+        "name":"Spicy Sauce",
+        "price":"$1",
+        "code":"",
+        "category":"Add on"
+    },
+    {
+        "id":12,
+        "image":"",
+        "name":"Pan Fried Pork & Chinese Cabbage Dumplings",
+        "price":"$10.9 for 6 pcs / $13.9 for 12 pcs",
+        "code":201,
+        "category":"Pan Fried Dumplings"
+    },
+    {
+        "id":13,
+        "image":"",
+        "name":"Pan Fried Beef & Celery Dumplings",
+        "price":"$10.9 for 6 pcs / $13.9 for 12 pcs",
+        "code":202,
+        "category":"Pan Fried Dumplings"
+    },
+    {
+        "id":14,
+        "image":"",
+        "name":"Pan Fried Vegetarian Dumplings",
+        "price":"$10.9 for 6 pcs / $13.9 for 12 pcs",
+        "code":203,
+        "category":"Pan Fried Dumplings"
+    }
+]

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
+    <script src="menu.js" defer></script>
     <title>Wei's Dumplings Hut</title>
   </head>
   <body>
@@ -40,14 +41,35 @@
 
     <!-- body -->
     <main>
-      <div class="content">
-        <div class="card">Dumplings</div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
+      <div class="menu-category">
+        <ul class="menu-category-list">
+          <li>All</li>
+          <li>Boiled Dumplings</li>
+          <li>Pan Fried Dumplings</li>
+          <li>Dry Noodles</li>
+          <li>Noodle Soup</li>
+          <li>Pan Fried Pie</li>
+          <li>Rice</li>
+          <li>Rice Meals</li>
+          <li>Sides</li>
+          <li>Chef's Dinner Special</li>
+          <li>Beverages</li>
+        </ul>
       </div>
+      <!-- <div class="content" id="root"> -->
+      <div class="item-cards" data-item-cards-container></div>
+      <!-- Template for a menu item card -->
+      <template data-item-template>
+        <div class="card">
+          <div class="description">
+            <h3 class="name" data-header></h3>
+            <div class="price" data-price></div>
+          </div>
+          <img data-image src="" alt="Menu item image" />
+        </div>
+      </template>
+      <!-- </div> -->
+      <div id="pagination"></div>
     </main>
 
     <!-- footer -->

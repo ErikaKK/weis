@@ -1,9 +1,10 @@
 html,
 body {
   padding: 0;
-  height: 100%;
-  width: 100%;
+  /* height: 100%;
+  width: 100%; */
   margin: 0;
+  box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -77,7 +78,6 @@ a {
   padding-right: 2rem;
 }
 .header-nav_list-item {
-  /* width: min-content; */
   white-space: nowrap;
   color: white;
   display: inline-block;
@@ -109,7 +109,7 @@ nav a:hover {
 }
 
 /* body */
-
+/* Home */
 .banner {
   background: url(../images/HomePagePicture.jpg);
   background-repeat: no-repeat;
@@ -131,38 +131,19 @@ nav a:hover {
   text-align: left;
 }
 
-.content {
-  padding: 2rem;
-  display: flex;
-  margin: 16px;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-.card {
-  width: 300px;
-  height: 200px;
-  border: 3px dashed #eee;
-  flex-grow: 1;
-}
-
 .preview {
+  padding: 2rem 0;
   width: 100%; /* Set the width of the container */
   overflow-x: auto; /* Enable horizontal scrollbar */
   white-space: nowrap; /* Prevent content from wrapping */
   height: 300px;
-
   box-shadow: 0 0px 20px gray inset;
 }
 
-.preview > * {
-  display: inline-block;
-  top: 5px;
-  margin: 5px;
-}
-
 .preview-card {
-  height: 280px;
+  display: inline-block;
+  margin: 0 1rem;
+  height: 300px;
   position: relative;
   overflow: hidden;
   /* display: flex;
@@ -171,6 +152,10 @@ nav a:hover {
 
 .preview-card img {
   height: 100%;
+}
+.preview-card:hover:not(:first-child) {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
 
 .map {
@@ -184,10 +169,101 @@ nav a:hover {
 }
 .contact_card {
   width: 100vw;
-
   flex-grow: 1;
-
   border: 3px dashed #841a1a;
+}
+
+/* Menu */
+.menu-category {
+  padding: 0 1rem;
+  overflow-x: auto;
+  white-space: nowrap;
+  color: hsl(0deg 0% 50%);
+  background-color: #f5f5f5;
+}
+.menu-category-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.menu-category-list li {
+  display: inline-block;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+}
+.menu-category-list li::after {
+  display: block;
+  padding-bottom: 1.5rem;
+  content: "";
+  border-bottom: 2px solid black;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+.menu-category-list li:hover {
+  color: black;
+}
+
+.menu-category-list li:hover::after {
+  transform: scaleX(1);
+}
+.content {
+  padding: 2rem;
+  display: flex;
+  /* margin: 16px; */
+  gap: 16px;
+  flex-wrap: wrap;
+  box-shadow: 0 7px 7px hsl(0deg 0% 70%) inset;
+}
+
+/* menu item card*/
+.item-cards {
+  /* width: 300px;
+  height: 100px;
+  flex-grow: 1; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 0.5rem;
+  margin: 1rem;
+}
+.card {
+  border: 1px solid hsl(0deg 0% 70%);
+  padding-left: 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  min-height: 140px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card .price {
+  padding-top: 1rem;
+}
+.card > img {
+  object-fit: cover;
+  height: 150px;
+  width: 150px;
+  /* float: right; */
+}
+.card > img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+#pagination {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+#pagination > button {
+  height: 3rem;
+  width: 3rem;
+  background-color: rgb(231, 35, 39);
+  border: 1.5px solid #fff;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-size: 1rem;
+}
+#pagination > button:hover {
+  background-color: #fff;
+  color: rgb(231, 35, 39);
+  border-color: rgb(231, 35, 39);
 }
 
 /* footer */
@@ -196,7 +272,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   background-color: rgb(231, 35, 39);
-  padding: 1rem 1.5rem;
+  padding: 2rem;
   gap: 1rem;
 }
 
@@ -205,6 +281,7 @@ footer {
   /* justify-content: center; */
   gap: 1rem;
   flex-wrap: wrap;
+  padding: 1rem 0;
 }
 .info-card {
   text-align: center;
@@ -228,20 +305,10 @@ footer {
 /* media queries */
 
 @media screen and (min-width: 801px) {
-  /* Header */
-
-  .info {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-
   /* Body */
   #bannerBG {
     max-width: 42%;
     min-width: 30%;
-  }
-  #bannerIMG {
-    display: none;
   }
 }
 
@@ -259,16 +326,16 @@ footer {
   }
   #header-nav {
     flex-direction: column;
-    /* display: none; */
-    height: 0;
-    opacity: 0;
+    display: none;
+    /* height: 0; */
+    /* opacity: 0; */
   }
 
   #header-nav.show {
-    /* display: flex; */
-    height: auto;
+    display: flex;
+    /* height: auto;
     opacity: 1;
-    transition: opacity 0.4s, height 0.4s;
+    transition: opacity 0.4s, height 0.4s; */
   }
   .header-nav_menu {
     width: 100%;
