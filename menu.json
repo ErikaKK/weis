@@ -77,7 +77,7 @@
         "name":"Dumpling soup",
         "price":"$1",
         "code":"",
-        "category":"Add on"
+        "category":"Boiled Dumplings"
     },
     {
         "id":11,
@@ -85,7 +85,7 @@
         "name":"Spicy Sauce",
         "price":"$1",
         "code":"",
-        "category":"Add on"
+        "category":"Boiled Dumplings"
     },
     {
         "id":12,
