@@ -92,7 +92,7 @@ a {
   margin: 1rem;
 }
 
-.language-selected {
+.selected {
   color: black;
 }
 
@@ -270,6 +270,9 @@ nav a:hover {
 }
 
 /* menu item card*/
+.reminder {
+  text-align: center;
+}
 .item-cards {
   /* width: 300px;
   height: 100px;

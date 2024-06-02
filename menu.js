@@ -29,6 +29,12 @@ function filterByCategory(category) {
     } else {
         filteredData = menuData.filter(item => item.category === category);
     }
+    if (filteredData.length == 0){
+        let reminder = document.querySelector(".none-reminder")
+        reminder.innerText = "Sorry, we currently don't have any item in this category."
+        reminder.style.height = '200px';
+        reminder.style.padding = '2rem';
+    }
     currentPage = 1; // Reset to first page
     setupPagination(filteredData.length);
     displayMenu(currentPage);

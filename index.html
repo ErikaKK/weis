@@ -135,6 +135,15 @@
         const navbar = document.getElementById("header-nav");
         navbar.classList.toggle("show");
       }
+      function adjustBannerHeight() {
+        const header = document.querySelector("header");
+        const banner = document.querySelector(".banner");
+        const headerHeight = header.offsetHeight;
+        banner.style.height = `calc(100vh - ${headerHeight}px)`;
+      }
+
+      window.addEventListener("load", adjustBannerHeight);
+      window.addEventListener("resize", adjustBannerHeight);
     </script>
   </body>
 </html>

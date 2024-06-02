@@ -110,5 +110,93 @@
         "price":"$10.9 for 6 pcs / $13.9 for 12 pcs",
         "code":203,
         "category":"Pan Fried Dumplings"
+    },
+    {
+        "id":15,
+        "image":"",
+        "name":"Minced Pork w/ Mushroom Noodles",
+        "price":"$12.9",
+        "code":301,
+        "category":"Dry Noodles"
+    },
+    {
+        "id":16,
+        "image":"",
+        "name":"Dan Dan Noodles",
+        "price":"$12.9",
+        "code":302,
+        "category":"Dry Noodles"
+    },
+    {
+        "id":17,
+        "image":"",
+        "name":"Minced Pork w/ Soybean Sauce Noodles",
+        "price":"$12.9",
+        "code":303,
+        "category":"Dry Noodles"
+    },
+    {
+        "id":18,
+        "image":"",
+        "name":"Green Chili w/ Minced Beef",
+        "price":"$12.9",
+        "code":304,
+        "category":"Dry Noodles"
+    },
+    {
+        "id":19,
+        "image":"",
+        "name":"Beef Fried Yellow Noodles",
+        "price":"$15.9",
+        "code":305,
+        "category":"Dry Noodles"
+    },
+    {
+        "id":20,
+        "image":"",
+        "name":"Fried Kway Teow",
+        "price":"$15.9",
+        "code":306,
+        "category":"Dry Noodles"
+    },
+    {
+        "id":21,
+        "image":"",
+        "name":"Hot & Sour Sweet Potato Noodles",
+        "price":"$13.9",
+        "code":401,
+        "category":"Noodles Soup"
+    },
+    {
+        "id":22,
+        "image":"",
+        "name":"Braised Beef Noodles Soup",
+        "price":"$16.9",
+        "code":402,
+        "category":"Noodles Soup"
+    },
+    {
+        "id":23,
+        "image":"",
+        "name":"Spicy Braised Beef Noodles Soup",
+        "price":"$16.9",
+        "code":403,
+        "category":"Noodles Soup"
+    },
+    {
+        "id":24,
+        "image":"",
+        "name":"Wonton Noodles Soup",
+        "price":"$15.9",
+        "code":404,
+        "category":"Noodles Soup"
+    },
+    {
+        "id":25,
+        "image":"",
+        "name":"Dumpling Noodles Soup",
+        "price":"$16.9",
+        "code":405,
+        "category":"Noodles Soup"
     }
 ]
