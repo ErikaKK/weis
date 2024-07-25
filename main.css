@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply m-0 p-0 box-border;
+}
+
+body {
+  background: #f2f2f2;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.pictures-carousel {
+  overflow: hidden;
+  padding: 2em 0;
+
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    #fff 30%,
+    #fff 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, #fff 10%, #fff 90%, transparent);
+}
+
+.pictures-carousel > div {
+  @apply w-max flex flex-nowrap gap-4 list-none;
+  animation: slide 20s infinite linear;
+}
+
+.pictures-carousel img {
+  height: 300px;
+}
+
+.pictures-carousel:hover div {
+  animation-play-state: paused;
+}
+
+.pictures-carousel img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.blink-text {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 0.3;
+  }
+}
