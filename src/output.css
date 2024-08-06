@@ -657,6 +657,10 @@ body {
   background: #f2f2f2;
 }
 
+a {
+  cursor: pointer;
+}
+
 @keyframes slide {
   0% {
     transform: translateX(0);
@@ -719,4 +723,8 @@ body {
   100% {
     opacity: 0.3;
   }
+}
+
+.hover\:underline:hover {
+  text-decoration-line: underline;
 }

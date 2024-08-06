@@ -9,6 +9,9 @@
 body {
   background: #f2f2f2;
 }
+a {
+  @apply cursor-pointer;
+}
 
 @keyframes slide {
   0% {
