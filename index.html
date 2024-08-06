@@ -7,14 +7,17 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link href="output.css" rel="stylesheet" />
+    <!-- <script src="components.js" defer></script> -->
     <script src="main.js" defer></script>
+
     <title>Wei's Dumpling Hut</title>
   </head>
   <body>
     <!-- banner -->
-    <div class="flex items-center h-14 bg-black text-white justify-center">
-      <p class="blink-text">MTW Limited Offer for $12.99</p>
-    </div>
+    <div id="top-banner"></div>
+
+    <div id="top-popup"></div>
+
     <!--header-->
     <header>
       <div class="header-top">
@@ -51,7 +54,7 @@
           <div id="bannerBG">
             <div class="banner-story">
               <h1>Our Story</h1>
-              <p>
+              <p class="underline">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non
                 voluptatem autem laboriosam quisquam a veniam expedita
                 distinctio reiciendis, odit, error asperiores ducimus aspernatur
@@ -78,9 +81,18 @@
     <!-- footer -->
     <footer>
       <div class="info">
-        <div class="info-card">Address</div>
-        <div class="info-card">Opening Hour</div>
-        <div class="info-card">Contact Us</div>
+        <div id="footer-address" class="info-card">
+          <div></div>
+          <div></div>
+        </div>
+        <div id="footer-opening" class="info-card">
+          <div></div>
+          <div></div>
+        </div>
+        <div id="footer-contact" class="info-card">
+          <div></div>
+          <div></div>
+        </div>
       </div>
       <div class="info-horizontal-line"></div>
       <div class="info-bottom">

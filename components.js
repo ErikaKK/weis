@@ -1,11 +1,11 @@
 class Top extends HTMLElement {
     connectedCallback(){
         this.innerHTML = `
-            <div  class="flex items-center h-14 bg-black text-white justify-center">
-                <p class="blink-text">MTW Limited Offer for $12.99</p>
-            </div>
+             <div class="flex items-center h-14 bg-black text-white justify-center">
+      <p class="blink-text hover:underline">MTW Limited Offer for $12.99</p>
+    </div>
         `
-    }
+    };
 }
 class Popup extends HTMLElement {
     connectedCallback(){
@@ -51,11 +51,20 @@ class Header extends HTMLElement {
 class Footer extends HTMLElement {
     connectedCallback(){
         this.innerHTML = `
-        <footer>
+      <footer>
       <div class="info">
-        <div class="info-card">Address</div>
-        <div class="info-card">Opening Hour</div>
-        <div class="info-card">Contact Us</div>
+        <div id="footer-address" class="info-card">
+          <div></div>
+          <div></div>
+        </div>
+        <div id="footer-opening" class="info-card">
+          <div></div>
+          <div></div>
+        </div>
+        <div id="footer-contact" class="info-card">
+          <div></div>
+          <div></div>
+        </div>
       </div>
       <div class="info-horizontal-line"></div>
       <div class="info-bottom">
